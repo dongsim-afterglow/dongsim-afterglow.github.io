@@ -13,7 +13,7 @@ members:
 
 <body>
   <hr>
-  <img src = "main_imgae.jpg" alt = "Example 001" style="display: block; margin: auto;">
+  <img src = "main_imgae.jpg" alt = "main_image" style="display: block; margin: auto;">
 </body>
 
 
