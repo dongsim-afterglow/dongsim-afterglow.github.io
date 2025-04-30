@@ -13,7 +13,7 @@ members:
 
 <body>
   <hr>
-  <img src = "images/Ex01.jpg" alt = "Example 001" style="display: block; margin: auto;">
+  <img src = "C:\Users\User\Desktop\졸업전시회\KakaoTalk_20250430_174849775.jpg" alt = "Example 001" style="display: block; margin: auto;">
 </body>
 
 
