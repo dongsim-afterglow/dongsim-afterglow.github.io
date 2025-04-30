@@ -3,6 +3,7 @@ layout: project_page
 permalink: /
 ---
 작품명: 이면의 소리: 감각의 확장
+
 members:
   - 박승민
   - 정지원
