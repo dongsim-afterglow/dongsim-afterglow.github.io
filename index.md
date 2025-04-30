@@ -2,13 +2,12 @@
 layout: project_page
 permalink: /
 ---
-#title: "통찰력"
+작품명: 이면의 소리: 감각의 확장
 members:
   - 박승민
   - 정지원
   - 채승룡
 ---
-가나다라마바사
 
 affiliations:
   - Soongsil University
