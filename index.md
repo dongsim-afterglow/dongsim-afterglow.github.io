@@ -10,13 +10,6 @@ members:
   - 채승룡
 ---
 
-affiliations:
-  - Soongsil University
-paper: "https://ojs.aaai.org/index.php/AAAI/article/view/32257"
-video: "https://youtu.be/5nSJh-IPWd0"
-code: "https://github.com/sidl-benchmark/sidl-benchmark.github.io"
-data: "https://github.com/your-repo/dataset"
----
 
 <body>
   <hr>
