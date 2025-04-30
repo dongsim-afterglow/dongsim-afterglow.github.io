@@ -13,7 +13,7 @@ permalink: /
 
 <body>
   <hr>
-  <img src = "main_imgae.jpg" alt = "main_image" style="display: block; margin: auto;">
+  <img src = "main_image.jpg" alt = "main_image" style="display: block; margin: auto;">
 </body>
 
 
