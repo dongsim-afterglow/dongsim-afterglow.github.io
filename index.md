@@ -38,7 +38,7 @@
       color: gray;
     }
 
-    /* Hero Section */
+
     header {
       position: relative;
       height: 100vh;
@@ -253,3 +253,4 @@
 
 </body>
 </html>
+
