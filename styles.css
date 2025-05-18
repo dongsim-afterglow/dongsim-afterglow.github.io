@@ -1,29 +1,326 @@
+/* src/App.css */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nanum Gothic', 'Playfair Display', serif, sans-serif;
-    background-color: black;
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', 'Playfair Display', serif, sans-serif;
+  background-color: black;
+  color: white;
+  
 }
 
+p {
+  line-height: 1.8;  /* 페이지 전체의 <p> 태그에 적용됨 */
+  font-size: 1.3rem;
+
+}
+
+p2 {
+  line-height: 1.8;  /* 페이지 전체의 <p> 태그에 적용됨 */
+  font-size: 1.0rem;
+
+}
+
+
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* 기본 네비게이션 스타일 (데스크탑용) */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #444;
 }
 
 nav .logo {
-    font-size: 1.5em;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: default;
 }
 
 nav .nav-links a {
-    margin-left: 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-bottom 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+nav .nav-links a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* 📱 반응형 스타일 (작은 화면용, 예: 모바일 또는 태블릿) */
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 25px;
+  }
+
+  nav .logo {
+    font-size: 11px;
+  }
+
+  nav .nav-links a {
+    margin-left: 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav .logo {
+    font-size: 9px;
+  }
+
+  nav .nav-links a {
+    margin-left: 8px;
+    font-size: 9px;
+  }
+}
+
+/* Main Section */
+header {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header .overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 2000px;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: -5px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 3.0rem;
+  opacity: 0.7;
+  margin-bottom: -40px;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 1.5cqw;
+  margin-bottom: -20px;
+  color: white;
+}
+section h3 {
+  font-size: 1.8cqw;
+  margin-bottom: 30px;
+  color: white;
+}
+
+
+/* Fade-in animation */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Exhibition */
+.exhibition-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+/* 전시 메인 그래픽 크게 가운데 정렬 */
+.exhibition-main-graphic {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exhibition-main-graphic img {
+  max-width: 150%;
+  height: auto;
+  border-radius: 12px;
+
+}.exhibition-main-graphic2 img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  
+}
+
+.exhibition-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.exhibition-photos img {
+  width: 300px;  /* 원하는 크기로 설정 */
+  height: auto;  /* 비율 유지 */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Slider Styles */
+.slider-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+}
+
+.slider-container:active {
+  cursor: grabbing;
+}
+
+.slider-track {
+  display: flex;
+}
+
+.slider-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  user-select: none;
+}
+
+.technology-photos {
+  display: flex;
+  flex-direction: row; /* 가로로 배치 */
+  justify-content: center;  /* 가운데 정렬 */
+  gap: 20px;  /* 사진들 사이 간격 */
+  flex-wrap: wrap;  /* 화면 크기에 맞게 줄바꿈 */
+}
+.technology-photos img{
+  width: 200%;        /* 가로 크기 고정 */
+  height: 400px;      /* 세로 크기 고정 */
+  object-fit: cover;  /* 비율 유지하며 꽉 채우기 */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tech-photo-item {
+  text-align: center;
+  width: 300px; /* 사진 크기 고정 */
+  display: flex;
+  flex-direction: column;  /* 세로로 배치 */
+  align-items: center;     /* 중앙 정렬 */
+}
+
+.tech-photo-container {
+  display: flex;             /* ✅ 가로 정렬 */
+  gap: 20px;                 /* ✅ 간격 20px */
+  justify-content: center;   /* ✅ 가운데 정렬 */
+  margin-bottom: 20px;
+  width: 100%;               /* ✅ 부모 크기 설정 */
+  max-width: 1200px;         /* ✅ 최대 크기 설정 */
+}
+
+.tech-photo-item {
+  flex: 1 1 0;               /* ✅ 균등하게 배치 */
+  display: flex;
+  justify-content: center;
+}
+
+.tech-photo-item img {
+  width: 150%;               /* ✅ 이미지 가로 크기 조절 */
+  max-width: 600px;          /* ✅ 최대 크기 설정 */
+  height: auto;
+  border-radius: 8px;        
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact */
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 180px;
+  text-align: center;
+}
+
+.contact-card img {
+  width: 140px;
+  height: 160px;
+  border-radius: 0%;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #888;
+  background-color: #111;
 }
