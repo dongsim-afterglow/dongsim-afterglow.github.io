@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', 'Playfair Display', serif, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 1.5em;
+}
+
+nav .nav-links a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
