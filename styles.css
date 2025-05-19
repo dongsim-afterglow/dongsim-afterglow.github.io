@@ -119,13 +119,13 @@ header .overlay {
 
 header h1 {
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: -5px;
 }
 
 header h2 {
   font-weight: 400;
-  font-size: 1.0rem;
+  font-size: 0.5rem;
   opacity: 0.7;
   margin-bottom: -40px;
 }
@@ -221,31 +221,6 @@ section h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Slider Styles */
-.slider-container {
-  width: 600px;
-  height: 400px;
-  overflow: hidden;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  cursor: grab;
-}
-
-.slider-container:active {
-  cursor: grabbing;
-}
-
-.slider-track {
-  display: flex;
-}
-
-.slider-image {
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-  user-select: none;
-}
 
 .technology-photos {
   display: flex;
