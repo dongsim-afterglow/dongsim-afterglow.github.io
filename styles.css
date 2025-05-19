@@ -23,7 +23,7 @@ p2 {
 }
 
 
-play-btn {
+#play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@ play-btn {
     font-weight: bold;
   }
 
-play-btn:hover {
+#play-btn:hover {
     background-color: rgba(255, 255, 255, 0.8);
     color: #000;
   }
