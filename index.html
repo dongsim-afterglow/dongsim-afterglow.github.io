@@ -28,6 +28,16 @@
             <source src="./assets/video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <button id="play-btn">재생</button>
+
+<script>
+  const video = document.getElementById('background-video');
+  const playBtn = document.getElementById('play-btn');
+
+  playBtn.addEventListener('click', () => {
+    video.play();
+  });
+</script>
         <div class="overlay">
             <h2>Sound Visualization using Plant Biorhythm</h2>
             <h1>&nbsp;&nbsp;The Sound of the Unseen : &nbsp;&nbsp; Expansion of the Senses</h1>
