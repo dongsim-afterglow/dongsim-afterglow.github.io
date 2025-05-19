@@ -11,12 +11,14 @@ body {
 p {
   line-height: 1.8;  /* 페이지 전체의 <p> 태그에 적용됨 */
   font-size: 1.3rem;
+  text-align: center; /* 가운데 정렬 */
 
 }
 
 p2 {
   line-height: 1.8;  /* 페이지 전체의 <p> 태그에 적용됨 */
   font-size: 1.0rem;
+  text-align: center; /* 가운데 정렬 */
 
 }
 
