@@ -28,7 +28,7 @@ p2 {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 8px 12px; /* 세로는 작게, 가로는 넓게 */
+    padding: 6px 16px; /* 세로는 작게, 가로는 넓게 */
     font-size: 10px;    /* 글자 크기 약간 키움 */
     background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
     color: #fff;       /* 글씨 흰색 */
