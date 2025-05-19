@@ -23,6 +23,31 @@ p2 {
 }
 
 
+play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 14px 28px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* 반투명 검정 */
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+
+play-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
 
 h1, h2 {
   font-family: 'Playfair Display', serif;
