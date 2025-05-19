@@ -199,13 +199,13 @@ section h3 {
 .exhibition-main-graphic img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0px;
 
 }.exhibition-main-graphic2 img {
   display: flex;
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 0px;
   
 }
 
@@ -220,7 +220,7 @@ section h3 {
   width: 300px;  /* 원하는 크기로 설정 */
   height: auto;  /* 비율 유지 */
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -268,7 +268,7 @@ section h3 {
   width: 150%;               /* ✅ 이미지 가로 크기 조절 */
   max-width: 600px;          /* ✅ 최대 크기 설정 */
   height: auto;
-  border-radius: 8px;        
+  border-radius: 0px;        
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
